@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palindrome_chk(num1){
+            console.log(`Check given number : ${num1}`)  //input number
+        var temp = [] //var to store reverse number in array
+        var res = num1.split("") //break the number in string 3,2,2,3
+        for(i = res.length-1;i>=0;i--){ // reverse the string
+            temp.push(res[i]) // push reverse arry in temp var
+        }
+       var res =  temp.join("") //join the string
+       
+      
+        if(num1 == res){        //compare input with reverse string
+            return `${res} number is Palindrome`
+           
+        }
+        else{
+            return ` ${res} number is not a palindrome number`
+        }
+        
+
+        }
+        var r = palindrome_chk("3223")
+    
+        console.log(r)
+       
+        
+    
+    </script>
+</body>
+</html>

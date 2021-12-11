@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check_prime(num){
+if(num < 0){
+    return "number is not prime"
+ }
+ else if(num == 1){
+     return "number is not prime"
+ }
+ else if(num == 2){
+     return "number is prime"
+ }
+ for(var i =2;i<num;i++){
+    if(num % i == 0){
+        return "number is not prime"
+    }
+    else{
+        return "number is a prime"
+    }
+ }
+
+        }
+        var res= check_prime()
+        console.log(res)
+        //  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+    </script>
+</body>
+</html>
